@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*Header*/
+
+body{
+    background-color: #FAEAB1
+}
+
+header{
+    width: 100%;
+    height: 180px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    height: 100%;
+}
+
+header .logo img{
+    height: 100%;
+}
+
+header .searchNavBar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+header .searchNavBar .search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    
+}
+
+header .searchNavBar .search input{
+    width: 400px;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 24px;
+}
+
+header .searchNavBar .search img{
+    width: 30px;
+}
+
+header .searchNavBar .navBar ul{
+    border: 2px solid black;
+    padding: 10px;
+    display: flex;
+    gap: 30px;
+    box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.75);
+    background-color: #E5BA73;
+    border-radius: 20px;
+}
+
+header .searchNavBar .navBar ul li{
+    text-decoration: none;
+    list-style: none;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+header .searchNavBar .navBar ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+header .searchNavBar .navBar ul li a:hover{
+    text-decoration: underline;
+}
+
+
+header .cart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*main*/
+
+.mainBody{
+    display: flex;
+    flex-direction: column;
+}
+
+.mainBody .bannerPromo{
+    height: 700px;
+    width: 100%;
+    background-image: url(../assets/img/banner-inicio.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.mainBody .bannerPromo h1{
+    padding-top: 50px;
+    color: white;
+    text-transform: uppercase; /*Con esto se convierte en mayuscula*/
+    font-size: 50px;
+    text-shadow: 2px 2px 8px black;
+}
+
+.mainBody .bannerPromo h1 span{
+    color: rgb(65, 125, 214);
+}
+
+.mainBody .bannerPromo .promContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 30px;
+}
+
+.mainBody .bannerPromo .promContainer h2{
+  color: white;
+  text-shadow: 2px 2px 8px black;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.mainBody .bannerPromo .promContainer .left{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainBody .bannerPromo .promContainer .right{
+    width: 50%;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainBody .bannerPromo .promContainer .right .circulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    background-color: #C58940;
+    border-radius: 50%;
+    color: white;
+}
+
+.mainBody .bannerPromo .descuento{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.mainBody .delivery{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.mainBody .delivery p{
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Footer */
+
+.followUs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #C58940;
+    padding: 40px;
+}
+
+.followUs .logos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.followUs .logos a{
+    transition: all 0.5s;
+}
+
+.followUs .logos a:hover{
+    scale: 1.2;
+}
+
+/*tarjeta*/
+.mainCombos .titulo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainCombos .titulo h1{
+    font-size: 100px;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.mainCombos .tarjetas{
+    padding: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.mainCombos .tarjetas .card{
+    width: 250px;
+    height: 350px;
+    background-color: WHITE;
+    border-radius: 40px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.mainCombos .tarjetas .card:hover{
+    cursor: pointer;
+    transform: scale(1.08);
+    box-shadow: 1px -3px 50px 5px rgba(0, 0, 0, 0.75);
+}
+
+.mainCombos .tarjetas .card img{
+    height: 250px;
+}
+
+.mainCombos .tarjetas .card .descripcion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+}
+
+.mainCombos .tarjetas .card h2{
+    font-size: 14px;
+    text-align: center;
+}
+
+
+/*Deli Box*/
+
+.DeliBox .titulo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.DeliBox .titulo h1{
+    font-size: 100px;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.DeliBox .tarjetas{
+    padding: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.DeliBox .tarjetas .card{
+    width: 250px;
+    height: 400px;
+    background-color: WHITE;
+    border-radius: 40px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.DeliBox .tarjetas .card .imagen img{
+    height: 300px;
+    border-radius: 30px;
+}
+
+.DeliBox .tarjetas .card:hover{
+    cursor: pointer;
+    transform: scale(1.08);
+    box-shadow: 1px -3px 50px 5px rgba(0, 0, 0, 0.75);
+}
+
+.DeliBox .tarjetas .card .img{
+    height: 250px;
+}
+
+.DeliBox .tarjetas .card .descripcion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+}
+
+.DeliBox .tarjetas .card h2{
+    text-align: center;
+}
+
+/*Lista De Precios*/
+
+.Precios .titulo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Precios .titulo h1{
+    font-size: 100px;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.Precios .tarjetas{
+    padding: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.Precios .tarjetas .card{
+    width: 250px;
+    height: 350px;
+    background-color: WHITE;
+    border-radius: 40px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.Precios .tarjetas .card:hover{
+    cursor: pointer;
+    transform: scale(1.08);
+    box-shadow: 1px -3px 50px 5px rgba(0, 0, 0, 0.75);
+}
+
+.Precios .tarjetas .card .imagen img{
+    height: 200px;
+}
+
+.Precios .tarjetas .card .descripcion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+}
+
+.Precios .tarjetas .card h2{
+    text-align: center;
+}
+
+.Precios .tarjetas .card .old-ale{
+    width: 200
+}
+
+.Precios .tarjetas .card .brahma{
+    width: 80px;
+}
